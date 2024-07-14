@@ -7,8 +7,8 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton('Открыть веб-страницу', web_app=WebAppInfo(url='https://www.bmw.com/en/index.html')))
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.add(types.KeyboardButton('Открыть веб-страницу', web_app=WebAppInfo(url='https://artem-mutaf.github.io/Tele3/')))
     await message.answer('Привет, мой дорогой друг!', reply_markup=markup)
 
 
