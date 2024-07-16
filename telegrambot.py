@@ -7,9 +7,10 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    markup.add(types.KeyboardButton('Открыть веб-страницу', web_app=WebAppInfo(url='https://artem-mutaf.github.io/Tele3/')))
-    await message.answer('Привет, мой дорогой друг!', reply_markup=markup)
+    markup = types.InlineKeyboardMarkup(resize_keyboard=True)
+    markup.add(types.InlineKeyboardButton('Ваш кошелек', web_app=WebAppInfo(url='https://artem-mutaf.github.io/Tele3/')))
+    await message.answer(f'Привет {message.from_user.first_name}\nДобро пожаловать на твой кошелек\n'
+                         f'', reply_markup=markup)
 
 
 #@dp.message_handler(content_types=['photo']) #Можно принимать значения
