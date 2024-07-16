@@ -7,10 +7,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <title>Shop</title>
-    <script src="https://telegram.org/js/telegram-web-app.js">
 
-    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -19,11 +18,25 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 200;
             color: var(--tg-theme-text-color);
-            background: var(-tg-theme-bg-color);
+            background: var(--tg-theme-bg-color);
         }
 
         button{
+            border: 0;
+            border-radius: 5px;
+            margin-top: 50px;
+            height: 60px;
+            width: 200px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 500ms ease;
+            color: var(--tg-theme-button-color);
+            background: var(--tg-theme-button-text-color);
+        }
 
+        button:hover{
+            background: var(--tg-theme-secondary-bg-color);
         }
 
     </style>
