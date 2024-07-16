@@ -16,7 +16,7 @@ async def start(message: types.Message):
 async def wallet(message: types.Message):
     markup = types.InlineKeyboardMarkup(resize_keyboard=True)
     markup.add(types.InlineKeyboardButton('Кошелек💼', web_app=WebAppInfo(url='https://artem-mutaf.github.io/Tele3/')))
-    await message.answer(f'Для перехода на кошелёк нажмите ниже...')
+    await message.answer(f'Для перехода на кошелёк нажмите ниже...', reply_markup=markup)
 
 
 #@dp.message_handler(content_types=['photo']) #Можно принимать значения
