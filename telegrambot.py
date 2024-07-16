@@ -10,7 +10,7 @@ async def start(message: types.Message):
     markup = types.InlineKeyboardMarkup(resize_keyboard=True)
     markup.add(types.InlineKeyboardButton('Перейти на кошелек', web_app=WebAppInfo(url='https://artem-mutaf.github.io/Tele3/')))
     await message.answer(f'<b>Привет {message.from_user.first_name}</b>\n\nДобро пожаловать на ваш <strong>кошелек</strong>\n'
-                         f'', reply_markup=markup)
+                         f'', parse_mode="html",reply_markup=markup)
 
 
 #@dp.message_handler(content_types=['photo']) #Можно принимать значения
