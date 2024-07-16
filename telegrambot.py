@@ -8,8 +8,8 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     markup = types.InlineKeyboardMarkup(resize_keyboard=True)
-    markup.add(types.InlineKeyboardButton('Ваш кошелек', web_app=WebAppInfo(url='https://artem-mutaf.github.io/Tele3/')))
-    await message.answer(f'Привет {message.from_user.first_name}\nДобро пожаловать на твой кошелек\n'
+    markup.add(types.InlineKeyboardButton('Перейти на кошелек', web_app=WebAppInfo(url='https://artem-mutaf.github.io/Tele3/')))
+    await message.answer(f'<b>Привет {message.from_user.first_name}</b>\n\nДобро пожаловать на ваш <strong>кошелек</strong>\n'
                          f'', reply_markup=markup)
 
 
