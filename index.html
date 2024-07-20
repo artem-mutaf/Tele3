@@ -21,7 +21,16 @@
         }
         h2{
             text-align: center;
+            top: 40px;
             font-size: 45px;
+            font-family: 'Arial', sans-serif;
+            color: var(--tg-theme-text-color);
+        }
+        h3{
+            text-align: center;
+            top: 40px;
+            left: 70px;
+            font-size: 30px;
             font-family: 'Arial', sans-serif;
             color: var(--tg-theme-text-color);
         }
@@ -40,14 +49,29 @@
             position: absolute;
             top: 120px; left: 50px;
             border: 0;
-            border-radius: 5px;
+            border-radius: 10px;
             margin-top: 50px;
-            height: 40px;
-            width: 130px;
+            height: 20px;
+            width: 50px;
             font-size: 20px;
             font-weight: 500;
             cursor: pointer;
             transition: all 500ms ease;
+            color: var(--tg-theme-button-color);
+            background: var(--tg-theme-button-text-color);
+        }
+        button{
+            position: absolute;
+            top: 140px; left: 50px;
+            border: 0;
+            border-radius: 10px;
+            margin-top: 50px;
+            height: 20px;
+            width: 50px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 1s ease;
             color: var(--tg-theme-button-color);
             background: var(--tg-theme-button-text-color);
         }
@@ -62,9 +86,10 @@
 <div id="main">
     <h1>Баланс</h1>
     <h2>0,00</h2>
-    <img src="https://www.iconfinder.com/icons/9041908/wallet_icon">
-    <p>Это легкодоступный кошелёк который поможет вам вывести вредства</p>
-    <button id="buy">Вывод</button>
+    <h3>$</h3>
+    <h4></h4>
+    <button id="buy">Вывести</button>
+    <button id="dep">Депозит</button>
 
 
 
